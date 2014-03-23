@@ -1,0 +1,22 @@
+{
+    "name": "Underlines Google search Results",
+    "description": "Underlines Google search Results as in the previous version of google",
+    "version": "0.1",
+    "permissions": [
+    "tabs","<all_urls>"
+    ],
+
+    "content_scripts": [
+        {
+        "matches": [
+            "http://www.google.com/*",
+            "http://www.google.co.in/*",
+            "https://www.google.com/*",
+            "https://www.google.co.in/*"
+            ],
+        "js": ["content.js"],
+        "run_at": "document_end"
+        }
+    ], 
+    "manifest_version":2
+}
